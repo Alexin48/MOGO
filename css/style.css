@@ -53,7 +53,7 @@ p {
     display: flex;
     /*Привязка к левому и правому краю*/
     justify-content: space-between;
-    /*РАСПОЛОЖЕНИЕ ПО ЦЕНТРУ ПО ВЕРТИКАЛИ*******************/
+    /*ВЫРАВНИВАНИЕ ПО ЦЕНТРУ ПО ВЕРТИКАЛИ*******************/
     align-items: center;
 
 }
@@ -407,4 +407,129 @@ p {
     bottom: -90px;
     right: 0;
     z-index: 1;
+}
+
+/* SERVICE */
+.service_block {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.accodrion_block {
+    display: flex;
+    padding: 15px;
+    gap: 30px;
+    border: 2px solid #e5e5e5;
+    margin-bottom: 11px;
+    line-height: 0;
+}
+
+.accodrion_block p {
+    line-height: 1.6
+}
+
+.accodrion_block_title {
+    font-weight: 700;
+    text-transform: uppercase;
+    align-items: center;
+    margin: auto 0;
+}
+
+.accordion_text p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: #999999;
+}
+
+.accordion_strelka_open,
+.accordion_strelka_close {
+    margin-left: auto;
+    border-top: 3px solid #e5e5e5;
+    border-right: 3px solid #e5e5e5;
+    width: 20px;
+    height: 20px;
+    /* Развернуть стрелку */
+    transform: rotate(-45deg);
+    /* стрелка по центру  */
+    margin: auto 0 0 auto;
+}
+
+.accordion_strelka_open:hover {
+    content: "";
+    display: block;
+    margin-left: auto;
+    border-top: 3px solid #e5e5e5;
+    border-right: 3px solid #e5e5e5;
+    width: 20px;
+    height: 20px;
+    /* Развернуть стрелку */
+    transform: rotate(135deg);
+    /* стрелка по центру  */
+    margin: auto 0 0 auto;
+}
+
+.accordion_strelka_close {
+    transform: rotate(135deg);
+    margin: 0 0 auto auto;
+}
+
+/* FOOTER_JON */
+.footer__jon {
+    background: url(../img/Rectangle\ 10.png) center no-repeat;
+    /* На всю ширину экрана */
+    background-size: cover;
+}
+
+.footer_Jon_block {
+    display: flex;
+    gap: 40px;
+    padding: 70px 0;
+    align-items: center;
+}
+
+.footer_Jon_strelka_left,
+.footer_Jon_strelka_right {
+    border-top: 3px solid #e5e5e5;
+    border-right: 3px solid #e5e5e5;
+    width: 30px;
+    height: 20px;
+    /* Развернуть стрелку */
+    transform: rotate(-125deg);
+    /* стрелка по центру  */
+    margin: auto;
+    align-items: center;
+}
+
+.footer_Jon_strelka_right {
+    /* Развернуть стрелку */
+    transform: rotate(45deg);
+}
+
+
+.footer_jon_img {
+    border: 3px solid #95e1d3;
+    padding: 30px;
+}
+
+.footer_jon_text {
+    padding: auto 0;
+    font-size: 24px;
+}
+
+.footer_line_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer_jon_line {
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+}
+
+.footer_lon_doe {
+    font-weight: 700;
+    font-family: 'Kaushan Script', cursive;
 }

@@ -1,2 +1,2 @@
-# Adaptive_obuchenie
+# MoGo
  

@@ -286,11 +286,12 @@ p {
     opacity: .1;
 }
 
+/* !Убрать снизу линию градиента */
 .about_img img {
     display: block;
 }
 
-.about_item:hover .about_text {
+.about_g:hover .about_text {
     opacity: 1;
 }
 
@@ -532,4 +533,87 @@ p {
 .footer_lon_doe {
     font-weight: 700;
     font-family: 'Kaushan Script', cursive;
+}
+
+/* Content_Team (Появление заднего фона при сдвиге картинки ) */
+.content_block_team {
+    display: flex;
+    gap: 30px;
+    position: relative;
+}
+
+.content_block__team_img {
+    background-color: #95e1d3;
+
+
+}
+
+.content_block__team_img:hover .block_img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.block_img {
+    transition: transform .2s linear;
+    background: linear-gradient(to bottom, #e5817f, #e9cd83);
+
+}
+
+.content_block__team_img:hover .block_img img {
+    opacity: .1;
+}
+
+/* !Убрать снизу линию градиента */
+.block_img img {
+    display: block;
+}
+
+
+
+
+.content_block_logo_img {
+    display: flex;
+    position: absolute;
+    gap: 2px;
+    opacity: 0;
+    z-index: 1;
+    left: 6%;
+    top: 50%;
+    transition: transform .2s linear;
+
+}
+
+.content_block_logo1_img,
+.content_block_logo2_img {
+    display: flex;
+    gap: 2px;
+    position: relative;
+    z-index: 1;
+}
+
+.content_block_logo2_img {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+}
+
+.content_block_logo_img:hover .content_block_logo2_img {
+    z-index: 1;
+    opacity: 2;
+}
+
+
+.logo_img {
+    background-color: #fce38a;
+    padding: 15px;
+
+}
+
+.content_block__team_img:hover .content_block_logo_img {
+    opacity: 1;
+
+}
+
+.content_block_logo_img:hover .logo_img {
+    background-color: #f38181;
+    padding: 15px;
 }

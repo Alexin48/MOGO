@@ -24,7 +24,7 @@ p {
 
 /* Общий отступ на почти всех слайдах */
 .container_margin {
-    margin: 90px auto 0;
+    margin: 100px auto 0;
 }
 
 .container {
@@ -254,7 +254,6 @@ p {
 .story_text {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
-    padding: 0 0 100px;
     padding: 0 125px 105px;
     text-align: center;
     opacity: .5;
@@ -404,6 +403,10 @@ p {
     position: relative;
 }
 
+.img_unique {
+    display: flex;
+}
+
 .img_unique--white {
     position: absolute;
     bottom: -90px;
@@ -477,6 +480,11 @@ p {
 }
 
 /* FOOTER_JON */
+
+.Content_Team {
+    padding-bottom: 100px;
+}
+
 .footer__jon {
     background: url(../img/Rectangle\ 10.png) center no-repeat;
     /* На всю ширину экрана */
@@ -546,8 +554,6 @@ p {
 
 .content_block__team_img {
     background-color: #95e1d3;
-
-
 }
 
 .content_block__team_img:hover .block_img {
@@ -635,4 +641,62 @@ p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
     color: #999999;
+}
+
+.banner {
+    background-color: #f8f8f8;
+}
+
+.banner_logo {
+    display: flex;
+    justify-content:space-between;
+    padding: 30px 0;
+}
+
+/* WORK */
+
+.pic {
+    display: flex;
+    line-height: 0;
+}
+
+.pic__img{
+    transition: transform .2s linear;
+    background: linear-gradient(to bottom, #e5817f, #e9cd83);
+}
+
+.pic__blosk_left{
+    position: relative;
+}
+
+.pic__img img:hover {
+    opacity: .1;
+}
+
+.pic__blosk_left:hover .pic_img_text{
+    opacity: 1;
+}
+
+.pic_img_text{
+    position: absolute;
+    opacity: .0;
+    text-align: center;
+    line-height: 1.6;
+    color: white;
+    z-index: 4;
+    top: 18%;
+    left: 28%;
+
+    
+    
+}
+
+.pic_text{
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing:1.5px
+}
+
+.pic_img_text p{
+    font-style: italic;
 }

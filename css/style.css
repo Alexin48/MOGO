@@ -842,47 +842,53 @@ p {
 
 /* FOOTER */
 
-.footer_block_left_center_height{
-    margin: 75px 0;
+.footer_block_left_center_height {
+    display: flex;
+    justify-content: space-between;
+
 }
 
-.footer_left{
+.footer_left {
     position: relative;
+    width: 50%;
 }
 
-.footer_left_title{
+.footer_left_title {
     font-size: 24px;
     color: #cccccc;
 }
 
-.footer_left_text{
+.footer_left_text {
     color: #acacac;
     padding: 50px 0;
+    font-size: 15px;
 }
 
-.footer_block_left_center_height{
+.footer_block_left_center_height {
     border-bottom: 1px solid #e5e5e5;
+    margin: 30px 0;
 }
 
-.footer_left_text_number span{
-font-weight: 700;
+.footer_left_text_number span {
+    font-weight: 700;
 }
 
-.footer_left_text_icon{
+.footer_left_text_icon {
     display: flex;
+    gap: 20px;
+}
+
+.footer_left_text_number_img {
     gap: 30px;
 }
 
-.footer_left_text_number_img{
-    gap: 30px;
-}
-.footer_left_text_text{
-    display: block;
+.footer_left_text_text {
+
     gap: 30px;
     padding-top: 20px;
 }
 
-.footer_left_text_text::before{
+.footer_left_text_text::before {
     position: absolute;
     content: "";
     display: block;
@@ -890,30 +896,65 @@ font-weight: 700;
     width: 100%;
 }
 
-.footer_left_text_text{
+.footer_left_text_text {
     display: flex;
 }
 
-.footer_left_input_text{
+.footer_left_input_text {
     display: flex;
     margin: 30px 0;
-    
-    
+
+
 }
 
-.footer_left_input input{
-    padding: 10px 50px;
+.footer_left_input input {
+    padding: 10px 40px;
     border: 1px solid #e5e5e5;
     outline: none;
     color: #acacac;
 }
 
-.footer_left_text_input{
+.footer_left_text_input {
     background: #95e1d3;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    padding: 5px 50px;
+    padding: 5px 40px;
     align-items: center;
     display: flex;
+    font-size: 14px;
+}
+
+/* footer_center */
+.footer_center {}
+
+.footer_center_img_text {
+    display: flex;
+    gap: 30px;
+}
+
+.footer_center_title_text {
+    padding: auto 0;
+    font-size: 12px;
+}
+
+.footer_center_title {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.footer_center_img {}
+
+z .footer_center_text {
+    color: #ababab;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.footer_height {}
+
+.footer_height_img {
+    display: flex;
+    line-height: 1;
+    gap: 2px;
 }

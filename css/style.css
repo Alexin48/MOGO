@@ -548,8 +548,11 @@ p {
 .content_block_team {
     display: flex;
     gap: 30px;
-    position: relative;
 
+}
+
+.content_block__team_text {
+    position: relative;
 }
 
 
@@ -582,10 +585,9 @@ p {
     gap: 2px;
     opacity: 0;
     z-index: 1;
-    left: 6%;
-    top: 50%;
+    left: 70px;
+    top: 200px;
     transition: transform .2s linear;
-
 }
 
 .content_block_logo1_img,
@@ -626,8 +628,6 @@ p {
     padding: 15px;
 }
 
-
-
 .block_team_text {
     margin: 30px auto;
 }
@@ -641,6 +641,7 @@ p {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
     color: #999999;
+    text-align: center;
 }
 
 .banner {
@@ -653,31 +654,30 @@ p {
     padding: 30px 0;
 }
 
-/* !WORK */
 
-.work{
-    
-}
+
+/* !WORK */
 
 .pic {
     display: flex;
     line-height: 0;
+    justify-content: center;
 }
 
-.pic__img {
+.pic_img_icon_text {
+    position: relative;
+}
+
+.pic_img {
     transition: transform .2s linear;
     background: linear-gradient(to bottom, #e5817f, #e9cd83);
 }
 
-.pic__blosk_left {
-    position: relative;
-}
-
-.pic__img img:hover {
+.pic_img_icon_text:hover .pic_img img {
     opacity: .1;
 }
 
-.pic__blosk_left:hover .pic_img_text {
+.pic_img_icon_text:hover .pic_img_text {
     opacity: 1;
 }
 
@@ -688,7 +688,7 @@ p {
     line-height: 1.6;
     color: white;
     z-index: 4;
-    top: 18%;
+    top: 45%;
     left: 28%;
 }
 
@@ -702,35 +702,55 @@ p {
     font-style: italic;
 }
 
-
 .fon_white {
     background: white;
     padding-bottom: 0;
 }
+
+
+
 
 /* !HAPPY */
 .happy {
     background: url(../img/Layer\ 53.png) center no-repeat;
     /* На всю ширину экрана */
     background-size: cover;
-    padding: 50px 0;
+    padding: 120px 0;
 }
 
 .happy_block {
     display: flex;
 }
 
+.happy_block_block {
+    display: flex;
+    flex-wrap: wrap;
+
+    /* ? не работает gap 150px */
+    gap: 50px 150px;
+}
+
 
 .happy_block__clients {
     display: flex;
     gap: 30px;
+    padding-right: 80px;
 }
 
 .clients_title {
     text-transform: uppercase;
     font-weight: 700;
     line-height: 3;
+    font-size: 14px;
 }
+
+
+.clients_text {
+    font-family: 'Roboto', sans-serif;
+    opacity: .5;
+
+}
+
 
 /* Текст с линией */
 .clients_name::after {
@@ -741,8 +761,10 @@ p {
     background-color: #f38181;
     margin: 20px 0;
     font-style: italic;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
+
 
 /* BLOG */
 .blog {
@@ -1007,6 +1029,7 @@ p {
     font-weight: 500;
     padding: 10px 0;
 }
-.footer_footer span{
+
+.footer_footer span {
     color: red;
 }

@@ -1,0 +1,25 @@
+/* intro intro--unique */
+.intro--unique {
+    background: url("../img/Layer 45.png") center no-repeat;
+    padding-bottom: 0;
+    /*Чтобы занимала всю область пропишем теги...*/
+    background-size: cover;
+}
+
+.unique_img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.img_unique {
+    display: flex;
+}
+
+.img_unique--white {
+    position: absolute;
+    bottom: -90px;
+    right: 0;
+    z-index: 1;
+}

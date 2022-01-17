@@ -1,0 +1,110 @@
+/*Intro*/
+.intro {
+    width: 100%;
+    /*Высота экрана посетителя*/
+    background: url("../img/Intro.jpg") center no-repeat;
+    /*Чтобы занимала всю область пропишем теги...*/
+    -webkit-begraund-size: cover;
+    background-size: cover;
+    /* Чтоб сделать по центру пропишем 3 мараметра ниже */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.intro_block {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 150px 0;
+}
+
+.intro_creative h2 {
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 72px;
+}
+
+.intro_title h1 {
+    font-size: 150px;
+    /*Жирный шрифт*/
+    font-weight: 700;
+    /*Все буквы заглавные*/
+    text-transform: uppercase;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    padding: 60px 0;
+}
+
+.intro_line {
+    background-color: white;
+    width: 60px;
+    height: 3px;
+    margin: 0 auto 60px;
+}
+
+
+/* BUTTON  */
+.btn {
+    display: inline-block;
+    /*Толщина рамки*/
+    border: 3px solid #fff;
+    /*Размер конопки*/
+    padding: 14px 40px;
+    /*Убрать подчеркивание у сылок*/
+    text-decoration: none;
+    /* Цвет  текста */
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    /* Плавность перехода */
+    transition: background .1s linear, color .1s linear;
+}
+
+/* Чтобы при наведении менялся цвет кнопки пропишем */
+.btn:hover {
+    /*Цвет кнопки*/
+    background-color: #fff;
+    /* Цвет текста */
+    color: black;
+}
+
+
+/* SLIDER */
+.intro_slider {
+    display: flex;
+    /*Перенос контента*/
+    justify-content: space-between;
+}
+
+.intro_slider_line {
+    width: 22%;
+    /* Линия над текстом */
+    border-top: 3px solid white;
+    /* Прозрачность */
+    opacity: .7;
+    /* Для того чтобы сделать красную полоску, пишем следующее
+    position: relative; */
+}
+
+
+
+/* Hover используют при наведении мыши */
+.intro_slider_line:hover {
+    opacity: 1;
+}
+
+.intro_slider_text {
+    text-align: left;
+    margin: 30px auto;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.intro_slider_text span {
+    font-size: 18px;
+    padding-left: 5px;
+    font-weight: 400;
+}

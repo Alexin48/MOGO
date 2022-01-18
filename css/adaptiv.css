@@ -1,19 +1,66 @@
+/* .container */
+@media only screen and (min-width : 1530px) and (max-width : 1919px) {
+
+    /* story_text */
+    .story_text {
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        padding: 0 300px 105px;
+        text-align: center;
+        opacity: .5;
+    }
+
+    /* CONTAINER */
+    .container {
+        width: 100%;
+        max-width: 1919px;
+        min-width: 1530px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    /* WORK */
+
+    /* HAPPY */
+    .happy_block {
+        display: flex;
+        padding: 0 100px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    /* BLOG */
+    .blog_block_left_center_right {
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+@media only screen and (min-width : 1200px) and (max-width : 1529px) {}
+
+@media only screen and (min-width : 1024px) and (max-width : 1990px) {}
+
+@media only screen and (min-width : 768px) and (max-width : 1023px) {}
+
+@media only screen and (min-width : 640px) and (max-width : 767px) {}
+
+@media only screen and (min-width : 480px) and (max-width : 639px) {}
+
+@media only screen and (min-width : 320px) and (max-width : 479px) {}
+
 @media (max-width: 992px) {
 
-    .intro_title h1 {
-        font-size: 100px;
+    .nav {
+        /*Все буквы большие*/
+        text-transform: uppercase;
+        font-size: 16px;
     }
-
-    .intro_creative h2 {
-        font-size: 70px;
-    }
-    .img_team{
-        flex-wrap: wrap;
-            }
-            .img_center, .foreg_font{
-                flex: 1 1 48%;
-            }
-        }
+}
 
 @media (max-width: 768px) {
 
@@ -29,11 +76,11 @@
         font-size: 40px;
     }
 
-    .intro_slider{
+    .intro_slider {
         flex-wrap: wrap;
     }
-    
-    .intro_slider_line{
+
+    .intro_slider_line {
         width: 48%;
     }
 }
@@ -53,11 +100,44 @@
         font-size: 40px;
     }
 
-    .intro_slider{
+    .intro_slider {
         flex-wrap: wrap;
     }
 
-    .intro_slider_line{
+    .intro_slider_line {
         width: 48%;
     }
 }
+
+/*Intro*/
+@media (max-width: 992px) {
+
+    .intro_title h1 {
+        font-size: 100px;
+    }
+
+    .intro_creative h2 {
+        font-size: 70px;
+    }
+
+    .img_team {
+        flex-wrap: wrap;
+    }
+
+    .img_center,
+    .foreg_font {
+        flex: 1 1 48%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro_creative h2 {
+        font-size: 50px;
+    }
+
+    .intro_title h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 576px) {}
